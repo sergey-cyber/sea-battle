@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sea Battle</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="startPage">
+    <h1>Sea Battle</h1>
+    <!-- <img class="startPage__img" src="./image/seaBattle.jpg"> -->
+    <div class="menu">
+        <input placeholder="inter your name" id="inputName">
+        <div class="validate"></div>
+        <button id="btnStart">Start Game</button>
+    </div>
+  </div>
+  <div class="playingField">
+    <h1 id="turn">Your turn</h1>
+    <div class="names">
+      <span id="name"></span><span> Your enemy </span>
+    </div>
+  </div>
+  <canvas id="canvas" width="1000" height="600"></canvas>
+  <div class="playerShips">
+    <img src="./image/ship1.png">
+    <img src="./image/ship2.png">
+    <img src="./image/ship3.png">
+    <img src="./image/ship4.png">
+  </div>
+  <div class="enemyShips">
+    <img src="./image/ship1.png">
+    <img src="./image/ship2.png">
+    <img src="./image/ship3.png">
+    <img src="./image/ship4.png">
+  </div>
+
+  <script type="text/javascript" src="jQuery/jquery-3.5.1.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

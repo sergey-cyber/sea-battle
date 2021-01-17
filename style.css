@@ -1,0 +1,154 @@
+
+body{
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgb(82, 144, 146);
+	overflow: hidden;
+	perspective: 600px;
+	background-image: url('./image/sea1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.startPage{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	background-image: url('./image/seaBattle.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.startPage img{
+	height: 100%;
+	width:100%;
+}
+
+.startPage h1{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 20px;
+	font-family: Lobster;
+	font-size: 100px;
+	font-style: italic;
+	transition: 1s;
+}
+
+.startPage h1:hover{
+	color: #007d7b;
+}
+
+.menu{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50%;
+	height: 30%;
+	background-color: rgba(222, 255, 243, 0.3);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	perspective: 600px;
+}
+
+.menu input{
+	outline: none;
+	width: 50%;	
+	height: 20%;
+	border-radius: 10px;
+}
+
+input:focus{
+	border: 2px solid #000;
+}
+
+.error{
+	border: 2px solid red;
+}
+
+.validate{
+	height: 30px;
+	width: 50%;
+	font-family: Lobster;
+	color: red;
+}
+
+.menu button{
+	padding: 20px 30px;
+	background-color: slateblue;
+	color: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+	font-family: Lobster;
+	font-size: 20px;
+}
+
+button:hover{
+	background-color: red;
+}
+
+.playingField{
+	position: fixed;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+	width: 80%;
+	font-family: Lobster;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.playingField h1{
+	text-align: center;
+}
+
+.names{
+	display: flex;
+	justify-content: space-between;
+	font-size: 20px;
+}
+
+.playerShips{
+	width: 70px;
+	position: absolute;
+	top: 30%;
+	left: 0;
+}
+
+.playerShips img{
+	width: 100%;
+}
+
+.enemyShips{
+	width: 70px;
+	position: absolute;
+	top: 30%;
+	right: 0;
+}
+
+.enemyShips img{
+	width: 100%;
+}
+
+
+#canvas{
+	display: block;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-40%) /* rotateX(30deg) */;
+	background-color: transparent;
+}
